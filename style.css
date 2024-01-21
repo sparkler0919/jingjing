@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 100px; /* 小屏幕上減少頂部填充 */
+    }
+    #game {
+        width: 100%; /* 小屏幕上遊戲寬度調整為100% */
+    }
+    /* 其他針對小屏幕的樣式調整 */
+}
+
+/* 在您的CSS樣式文件中 */
+#question {
+    font-weight: bold; /* 讓題目文字變粗體 */
+    font-size: 24px; /* 放大題目文字 */
+    color: #fff; /* 設置題目文字顏色為白色 */
+}
+
+#options button {
+    border: 2px solid #fff; /* 設置邊框為2px寬的白色邊框 */
+    border-radius: 10px; /* 設置圓角 */
+    background-color: #000; /* 設置背景顏色為黑色 */
+    color: #fff; /* 設置文字顏色為白色 */
+    font-size: 18px; /* 放大選項按鈕文字 */
+    transition: background-color 0.3s; /* 添加顏色過渡效果 */
+}
+
+#options button:hover {
+    background-color: #fff; /* 在鼠標觸碰時設置背景顏色為白色 */
+    color: #000; /* 設置文字顏色為黑色 */
+}
+
+body {
+    background-color: #000; /* 設置網頁背景為黑色 */
+}
+
+
+
+#game {
+    margin: auto;
+    width: 300px;
+}
+
+#game > div {
+    margin-bottom: 10px; /* 調整按鈕間距離 */
+}
+
+#game input, #game button {
+    margin: 3px; /* 每個輸入框和按鈕之間的間隔 */
+}
+
+#feedback {
+    color: green;
+    margin-top: 20px;
+}

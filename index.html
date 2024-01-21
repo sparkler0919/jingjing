@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易互動網站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="question"></div>
+        <div id="options">
+            <!-- 4個選項按鈕 -->
+            <button onclick="checkAnswer(0)"></button>
+            <button onclick="checkAnswer(1)"></button>
+            <button onclick="checkAnswer(2)"></button>
+            <button onclick="checkAnswer(3)"></button>
+        </div>
+        <div id="congratulations" style="display: none;">
+            <h1>恭喜完成！</h1>
+        </div>
+        <div id="feedback"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
