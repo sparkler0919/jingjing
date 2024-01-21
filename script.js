@@ -45,16 +45,6 @@ function checkAnswer(selectedOption) {
     }
 }
 
-function displayCongratulations() {
-    const correctFeedback = document.getElementById("feedback");
-    correctFeedback.innerText = `恭喜完成！您答错了：${wrongAnswers} 题。`;
-    correctFeedback.style.display = 'block';
-
-    // 延迟1.5秒后在新窗口中打开网页
-    setTimeout(function () {
-        window.open("https://www.flyingvest.com.tw/company?0103b051_page=1", "_blank");
-    }, 1500);
-}
 
 function displayQuestion() {
     if (currentQuestionIndex < currentQuestions.length) {
@@ -72,6 +62,27 @@ function displayQuestion() {
         // 完成所有问题，不显示任何内容
         document.getElementById("game").innerHTML = "";
     }
+}
+
+function displayCongratulations() {
+    const correctFeedback = document.getElementById("feedback");
+    correctFeedback.innerText = `恭喜完成！您答错了：${wrongAnswers} 题。`;
+    correctFeedback.style.display = 'block';
+
+    // 显示"獎勵"按钮
+    const rewardButton = document.getElementById("rewardButton");
+    if (rewardButton) {
+        rewardButton.style.display = 'block';
+    }
+
+    // 延迟1.5秒后在新窗口中打开网页
+    setTimeout(function () {
+        window.open("https://www.flyingvest.com.tw/company?0103b051_page=1", "_blank");
+    }, 1500);
+}
+
+function openReward() {
+    window.open("https://www.flyingvest.com.tw/company?0103b051_page=1", "_blank");
 }
 
 window.onload = function () {

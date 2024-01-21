@@ -39,6 +39,28 @@ body {
     background-color: #000; /* 設置網頁背景為黑色 */
 }
 
+#congratulations {
+    text-align: center; /* 文本水平居中 */
+}
+
+#rewardButton {
+    background-color: #000000; /* 按钮背景颜色为蓝色 */
+    color: #fff; /* 文字颜色为白色 */
+    font-size: 18px; /* 文字大小 */
+    border: 2px solid #fff; /* 設置邊框為2px寬的白色邊框 */
+    border-radius: 10px; /* 設置圓角 */
+    padding: 10px 20px; /* 按钮内边距 */
+    cursor: pointer; /* 鼠标悬停样式 */
+    transition: background-color 0.3s; /* 背景颜色过渡效果 */
+    display: inline-block; /* 设置按钮为内联块元素，使其水平居中 */
+    margin-top: 20px; /* 设置顶部间距 */
+    margin-left: auto; /* 将左侧边距设置为auto，以水平居中 */
+    margin-right: auto; /* 将右侧边距设置为auto，以水平居中 */
+}
+
+#rewardButton:hover {
+    background-color: #d19507; /* 鼠标悬停时的背景颜色 */
+}
 
 
 #game {
@@ -48,10 +70,6 @@ body {
 
 #game > div {
     margin-bottom: 10px; /* 調整按鈕間距離 */
-}
-
-#game input, #game button {
-    margin: 3px; /* 每個輸入框和按鈕之間的間隔 */
 }
 
 #feedback {
